@@ -1,0 +1,21 @@
+***************Short Notes on Angular Basics ******************
+- Copy the latest CDN from http://angularjs.org/ 
+- To create angular app, we use "ng-app='SampleProject'"
+
+- app.js includes "var app = angular.module('SampleProject',[]);" - This file is creating Angular js app called SampleProject and assigning it to app variable
+
+- mainController.js -"app.controller("MainController",function($scope){});" assiging controller to the SampleProject app
+	
+	In $scope, we will assign all our controller variable which will then available in html page
+	
+	Eg :- "$scope.understand="Hey There! I am using Angular""
+	In html, we will directly use understand with {{}} to access the value of understand 
+	Eg :-  <div id='content' ng-app='SampleProject' ng-controller='MainController'>{{understand}}</div>
+	
+	## scope variable is available only to that controller so you could not access the variable outside #content DIV unless the same controller is defined 
+	
+	
+------------------Bindig in angular-----------------------------------
+	
+
+
